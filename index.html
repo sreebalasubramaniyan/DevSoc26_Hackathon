@@ -2,53 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Voice to Text</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Financial Engine</title>
   </head>
   <body>
-    <div class="card">
-      <h1>Voice → Text</h1>
-
-      <div class="row">
-        <button id="startBtn">Start</button>
-        <button id="stopBtn" disabled>Stop</button>
-        <button id="clearBtn">Clear</button>
-        <button id="copyBtn">Copy</button>
-      </div>
-
-      <div class="meta">
-        <label>
-          Language:
-          <select id="lang">
-            <option value="en-IN">English (India)</option>
-            <option value="en-US">English (US)</option>
-            <option value="ta-IN">Tamil (India)</option>
-            <option value="de-DE">German (Germany)</option>
-            <option value="de-AT">German (Austria)</option>
-            <option value="de-CH">German (Switzerland)</option>
-          </select>
-        </label>
-
-        <label>
-          <input id="interim" type="checkbox" checked />
-          Show live (interim) text
-        </label>
-      </div>
-
-      <p class="hint" id="status">Status: idle</p>
-
-      <h3>Final</h3>
-      <textarea
-        id="finalText"
-        placeholder="Final transcript appears here..."
-        rows="6"
-      ></textarea>
-
-      <h3>Live</h3>
-      <div id="liveText" class="live" aria-live="polite"></div>
-    </div>
-
-    <script src="app.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
