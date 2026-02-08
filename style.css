@@ -1,0 +1,9 @@
+body { font-family: system-ui, Arial, sans-serif; background:#0b1220; color:#e7e9ee; margin:0; }
+.card { max-width: 780px; margin: 40px auto; background:#121a2b; padding: 22px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+.row { display:flex; gap:10px; flex-wrap:wrap; }
+button { padding:10px 14px; border:0; border-radius: 10px; cursor:pointer; background:#2a66ff; color:white; font-weight:600; }
+button:disabled { opacity:.5; cursor:not-allowed; }
+.meta { display:flex; gap:16px; flex-wrap:wrap; align-items:center; margin: 14px 0; }
+.hint { opacity: .8; margin: 6px 0 14px; }
+textarea { width:100%; border-radius: 12px; padding: 12px; border: 1px solid #2a3550; background:#0b1220; color:#e7e9ee; }
+.live { min-height: 70px; border-radius: 12px; padding: 12px; border: 1px dashed #2a3550; background:#0b1220; white-space: pre-wrap; }
